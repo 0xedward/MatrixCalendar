@@ -6,13 +6,16 @@
 
 @section('content')
 
+
+
 @if(!empty($tasks))
     <ul>
-    @foreach($tasks as $MatrixTask)
-    
-    <li>{{$MatrixTask->d}}</li>
+    @foreach($tasks as $task)
+
+    <li>{{$task->task}}</li>
 
     @endforeach
     </ul>
 @endif
+
 @stop

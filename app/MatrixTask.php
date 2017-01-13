@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class MatrixTask extends Model
 {
-    public function tasks()
+    public function user()
     {
         return $this->belongsTo('App\User');
     }
