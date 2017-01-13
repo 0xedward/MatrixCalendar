@@ -7,7 +7,7 @@
 @section('content')
 
 
-WADUP AGAIN BOI AGGGGINN misspeled
+WADUP AGAIN BOI AGGGGINN misspeled again
 @if(!empty($tasks))
     <ul>
     @foreach($tasks as $task)
