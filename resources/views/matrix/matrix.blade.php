@@ -7,7 +7,7 @@
 @section('content')
 
 
-
+WADUP
 @if(!empty($tasks))
     <ul>
     @foreach($tasks as $task)
