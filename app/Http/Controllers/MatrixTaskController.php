@@ -11,10 +11,10 @@ class MatrixTaskController extends Controller
 {
     //Show the main matrix entries
     public function index() {
-        $tasks = MatrixTask::where('user_id', Auth::user()->id)->get();
+        //$tasks = MatrixTask::where('user_id', Auth::user()->id)->get();
+        $tasks = Auth::user()->matrixtasks();
         
-        print($tasks);
-        //return view('matrix/matrix',['tasks' => $tasks]);
+        return view('matrix/matrix',['tasks' => $tasks]);
     }
     //TODO: create middleware
 }

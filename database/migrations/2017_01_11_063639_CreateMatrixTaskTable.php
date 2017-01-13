@@ -30,6 +30,7 @@ class CreateMatrixTaskTable extends Migration
      */
     public function down()
     {
-        //
+        //Drop table
+        Schema::dropIfExists('matrix_tasks');
     }
 }

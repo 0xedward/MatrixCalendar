@@ -8,9 +8,9 @@
 
 @if(!empty($tasks))
     <ul>
-    @foreach($task as $tasks)
+    @foreach($tasks as $MatrixTask)
     
-    <li>{{$task}}</li>
+    <li>{{$MatrixTask->d}}</li>
 
     @endforeach
     </ul>
