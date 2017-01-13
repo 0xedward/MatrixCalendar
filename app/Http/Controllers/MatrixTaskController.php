@@ -5,15 +5,16 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\MatrixTask;
+use Auth;
 
 class MatrixTaskController extends Controller
 {
     //Show the main matrix entries
     public function index() {
-        MatrixTask
+        $tasks = MatrixTask::where('user_id', Auth::user()->id)->get();
         
-        
-        return view('matrix/matrix',['variablename' => $variable]);
+        print($tasks);
+        //return view('matrix/matrix',['tasks' => $tasks]);
     }
-    
+    //TODO: create middleware
 }

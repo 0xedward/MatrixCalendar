@@ -13,7 +13,7 @@ class CreateMatrixTaskTable extends Migration
      */
     public function up()
     {
-        Schema::create('matrixtasks', function (Blueprint $table) {
+        Schema::create('matrix_tasks', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id');
             $table->string('quadrant');

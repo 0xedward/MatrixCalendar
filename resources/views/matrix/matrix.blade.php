@@ -6,7 +6,13 @@
 
 @section('content')
 
+@if(!empty($tasks))
+    <ul>
+    @foreach($task as $tasks)
+    
+    <li>{{$task}}</li>
 
-
+    @endforeach
+    </ul>
+@endif
 @stop
-
