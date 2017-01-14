@@ -12,8 +12,8 @@
     
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-awusxf8AUojygHf2+joICySzB780jVvQaVCAt1clU3QsyAitLGul28Qxb2r1e5g+" crossorigin="anonymous">
+    @yield('styles')
 
     <!-- Scripts -->
     <script>
@@ -46,7 +46,9 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        &nbsp;
+                        <li><a href="/dashboard">Dashboard</a></li>
+                        <li><a href="/matrix">Matrix</a></li>
+                        <li><a href="/calendar">Calendar</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -80,8 +82,10 @@
                 </div>
             </div>
         </nav>
-
-        @yield('content')
+        <div class="container">
+            @yield('content')    
+        </div>
+        
     </div>
 
     <!-- Scripts -->

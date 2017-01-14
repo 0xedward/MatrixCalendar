@@ -1,0 +1,19 @@
+.matrix{
+	padding: 20px;
+	margin: 30px;
+}
+.matrix-td{
+	padding: 5px;
+}
+.matrix > th{
+	height: 5%;
+	width: 40%;
+}
+.matrix < .matrix-left-th{
+	height: 40%;
+	width: 5%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
