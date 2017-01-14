@@ -29,7 +29,7 @@
 		</thead>
 		<tbody>
 			<tr>
-				<td class=".matrix-left-th">
+				<td class="matrix-td">
 					Quadrant Left Top
 				</td>
 				<td class="matrix-td">
