@@ -7,7 +7,6 @@
 @stop
 
 
-
 @section('content')
 	<h2>Eisenhower Matrix</h2>	
 	@if(!empty($tasks))
@@ -20,37 +19,23 @@
 	    </ul>
 	@endif
 
-	<table style="width:100%">
-		<thead>
-			<th></th>
-			<th>Urgent</th>
+<table>
+        <tr>
+            <th class="smally">/</th>
+            <th>URGENT</th>
+            <th>NOT URGENT</th>
+        </tr>
+        <tr>
+            <td height="50" class="vertical_td"><div class="rotate">IMPORTANT</div></td>
+            <td style="background:#CFF09E;">Quadrant 1</td>#D5DED9
+            <td>Quadrant 2</td>
+        </tr>
 
-			<th>Not Urgent</th>
-		</thead>
-		<tbody>
-			<tr>
-				<td class=".matrix-left-th">
-					Important
-				</td>
-				<td class="matrix-td">
-					Quadrant Top Left
-				</td>
-				<td class="matrix-td">
-					Quadrant Top Right
-				</td>				
-			</tr>
-			<tr>
-				<td class=".matrix-left-th">
-					Not Important
-				</td>
-				<td class="matrix-td">
-					Quadrant Top Left
-				</td>
-				<td class="matrix-td">
-					Quadrant Top Right
-				</td>				
-			</tr>
-		</tbody>
-	</table>
+        <tr>
+            <td height="5"><div class="rotate">NOT IMPORTANT</div></td>
+            <td>Quadrant 1</td>
+            <td>Quadrant 2</td>
+        </tr>
+</table>
 
 @stop
