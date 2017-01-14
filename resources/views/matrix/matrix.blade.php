@@ -7,9 +7,9 @@
 @stop
 
 
-
 @section('content')
-	<h2>Eisenhower Matrix</h2>	
+</div>
+	
 	@if(!empty($tasks))
 	    <ul>
 	    @foreach($tasks as $task)
@@ -19,38 +19,24 @@
 	    @endforeach
 	    </ul>
 	@endif
-
-	<table style="width:100%">
-		<thead>
-			<th></th>
-			<th>Quadrant Top Left</th>
-
-			<th>Quadrant Top Right</th>
-		</thead>
-		<tbody>
-			<tr>
-				<td class="matrix-td">
-					Quadrant Left Top
-				</td>
-				<td class="matrix-td">
-					Quadrant Top Left
-				</td>
-				<td class="matrix-td">
-					Quadrant Top Right
-				</td>				
-			</tr>
-			<tr>
-				<td class=".matrix-left-th">
-					Quadrant Left Top
-				</td>
-				<td class="matrix-td">
-					Quadrant Top Left
-				</td>
-				<td class="matrix-td">
-					Quadrant Top Right
-				</td>				
-			</tr>
-		</tbody>
-	</table>
-
+<center>
+    <table>
+            <tr>
+                <th class="smally"> </th>
+                <th style="background:#D5DED9;">URGENT</th>
+                <th style="background:#D5DED9;">NOT URGENT</th>
+            </tr>
+            <tr>
+                <td style="background:#D5DED9;" class="vertical_td"><div class="rotate">IMPORTANT</div></td>
+                <td style="background:#CFF09E;">Quadrant 1</td>
+                <td style="background:#80aaef;">Quadrant 2</td>
+            </tr>
+    
+            <tr>
+                <td style="background:#D5DED9;" class="vertical_td"><div class="rotate">NOT IMPORTANT</div></td>
+                <td style="background:#f5fb5f;">Quadrant 3</td>
+                <td style="background:#ff7277;">Quadrant 4</td>
+            </tr>
+    </table>
+</center>
 @stop

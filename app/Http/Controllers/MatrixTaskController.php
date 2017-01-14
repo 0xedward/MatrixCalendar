@@ -32,6 +32,7 @@ class MatrixTaskController extends Controller
         **/
         return view('matrix/matrix',['tasks' => $tasks,'name' => $name]); 
     }
+    
     //TODO adds tasks to table
     //TODO removes tasks to table
     //TODO display all tasks with correct placement

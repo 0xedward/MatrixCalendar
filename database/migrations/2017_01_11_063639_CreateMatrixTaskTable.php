@@ -16,9 +16,11 @@ class CreateMatrixTaskTable extends Migration
         Schema::create('matrix_tasks', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id');
+            $table->string('task_name');
+            $table->string('category');
+            $table->dateTime('due_date');
             $table->string('quadrant');
-            $table->string('task');
-            $table->integer('listorder');
+            $table->integer('list_order');
             $table->timestamps();
         });
     }

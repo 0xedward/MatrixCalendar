@@ -20,3 +20,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::get('/matrix','MatrixTaskController@index');
+
+Route::get('/settings','SettingsController@index');

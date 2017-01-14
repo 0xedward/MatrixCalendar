@@ -3,8 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     
@@ -13,6 +12,13 @@
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-awusxf8AUojygHf2+joICySzB780jVvQaVCAt1clU3QsyAitLGul28Qxb2r1e5g+" crossorigin="anonymous">
+    
+    <style type="text/css">
+        body{
+            font-size:1.5em;
+        }
+    </style>
+    
     @yield('styles')
 
     <!-- Scripts -->
@@ -46,9 +52,11 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        <li><a href="/dashboard">Dashboard</a></li>
-                        <li><a href="/matrix">Matrix</a></li>
-                        <li><a href="/calendar">Calendar</a></li>
+                        @if (!Auth::guest())
+                            <li><a href="/dashboard">Dashboard</a></li>
+                            <li><a href="/matrix">Matrix</a></li>
+                            <li><a href="/calendar">Calendar</a></li>
+                        @endif
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -64,6 +72,9 @@
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="{{ url('/settings') }}">Settings</a>
+                                    </li>
                                     <li>
                                         <a href="{{ url('/logout') }}"
                                             onclick="event.preventDefault();
