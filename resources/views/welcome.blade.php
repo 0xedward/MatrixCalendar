@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title','Welcome!')
 @section('content')
 <div class="jumbotron">
   <h1>Matrix Calendar</h1>
