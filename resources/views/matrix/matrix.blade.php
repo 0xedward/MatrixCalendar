@@ -23,14 +23,14 @@
 	<table style="width:100%">
 		<thead>
 			<th></th>
-			<th>Quadrant Top Left</th>
+			<th>Urgent</th>
 
-			<th>Quadrant Top Right</th>
+			<th>Not Urgent</th>
 		</thead>
 		<tbody>
 			<tr>
 				<td class=".matrix-left-th">
-					Quadrant Left Top
+					Important
 				</td>
 				<td class="matrix-td">
 					Quadrant Top Left
@@ -41,7 +41,7 @@
 			</tr>
 			<tr>
 				<td class=".matrix-left-th">
-					Quadrant Left Top
+					Not Important
 				</td>
 				<td class="matrix-td">
 					Quadrant Top Left
